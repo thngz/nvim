@@ -1,4 +1,9 @@
 require('telescope').load_extension "file_browser"
+require('telescope').setup({
+    defaults = {
+        file_ignore_patterns = {'^node_modules/', '.wwwroot/', '.bin/', '.obj/'},
+    }
+})
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})

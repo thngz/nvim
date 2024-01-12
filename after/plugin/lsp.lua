@@ -3,7 +3,7 @@ local lsp_zero = require('lsp-zero')
 require('mason').setup({})
 
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', 'ruff_lsp', "pylsp", "clojure_lsp", "omnisharp", "gopls", "html", "cssls", "jsonls" },
+    ensure_installed = { 'tsserver', 'rust_analyzer', 'ruff_lsp', "pylsp", "clojure_lsp", "omnisharp", "gopls", "html", "cssls", "jsonls", "svelte"},
 
     handlers = {
         lsp_zero.default_setup,
