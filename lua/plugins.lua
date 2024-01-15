@@ -40,6 +40,7 @@ return {
         config = function()
             require("better_escape").setup({})
         end
-    }
+    },
+    {'bluz71/vim-moonfly-colors'},
 }
 

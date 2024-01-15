@@ -1,4 +1,5 @@
 require('keybinds')
+
 vim.wo.relativenumber = true
 vim.opt.smartindent = true
 vim.opt.termguicolors = true
@@ -26,3 +27,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
+
+vim.cmd('colorscheme moonfly')
