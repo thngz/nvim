@@ -11,12 +11,11 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- keeps cursor in the same place after using J
 vim.keymap.set("n", "J", "mzJ`z")
 
--- greatest remap ever, preserves the content of the buffer after pasting
-vim.keymap.set("x", "<leader>p", [["_dP]])
-
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
 vim.keymap.set("n","<leader>sh", ":split<CR>")
 vim.keymap.set("n","<leader>sv", ":vsplit<CR>")
+-- open file explorer
+vim.api.nvim_set_keymap('n', '<Leader>fe', ':e .<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
