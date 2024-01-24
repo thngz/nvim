@@ -7,7 +7,10 @@ return {
       configs.setup({
           ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "php", "javascript", "typescript", "html", "svelte"},
           sync_install = false,
-          highlight = { enable = true },
+          highlight = { 
+            enable = true,
+            additional_vim_regex_highlighting = true,
+          },
           auto_install = true,
           indent = { enable = true },  
         })
